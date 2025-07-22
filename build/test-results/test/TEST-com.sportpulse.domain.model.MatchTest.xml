@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Match Aggregate" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-07-22T20:13:05.052Z" hostname="MacBook-Air-de-LABELSYSTEMS.local" time="0.035">
+  <properties/>
+  <testcase name="should have unique ID when created" classname="com.sportpulse.domain.model.MatchTest" time="0.029"/>
+  <testcase name="should not allow score to decrease" classname="com.sportpulse.domain.model.MatchTest" time="0.002"/>
+  <testcase name="should create match with correct initial state" classname="com.sportpulse.domain.model.MatchTest" time="0.0"/>
+  <testcase name="should start match correctly" classname="com.sportpulse.domain.model.MatchTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
