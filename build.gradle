@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.5.3'
     id 'io.spring.dependency-management' version '1.1.4'
     id 'eclipse'
     id 'idea'
@@ -24,22 +23,22 @@ repositories {
 }
 
 dependencies {
-    // Spring Boot
-    implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    // Spring Framework
+    implementation 'org.springframework:spring-context:6.1.4'
+    implementation 'org.springframework:spring-core:6.1.4'
     
     // Testing - TDD
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework:spring-test:6.1.4'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
     testImplementation 'net.jqwik:jqwik:1.8.3'  // Property-based testing
     testImplementation 'org.assertj:assertj-core:3.24.2'  // Assertions más legibles
     
     // Lombok para reducir boilerplate
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
     
     // Jackson para JSON
-    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
 }
 
 tasks.named('test') {
